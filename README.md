@@ -1,6 +1,5 @@
 # Music-Recommender
 
-Proyecto 01: Sistema de Recomendaciones de Música con NoSQL
 Este proyecto es una aplicación web simple que ofrece recomendaciones de música, desarrollada como parte de la asignatura "Tópicos Especiales para la Gestión de Datos" de la Universidad Católica Andrés Bello (UCAB). 
 
 El objetivo es demostrar el uso de una base de datos NoSQL (MongoDB) para gestionar datos semiestructurados y potenciar un sistema de recomendaciones personalizadas. 
