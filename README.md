@@ -5,12 +5,12 @@ Este proyecto es una aplicación web simple que ofrece recomendaciones de músic
 
 El objetivo es demostrar el uso de una base de datos NoSQL (MongoDB) para gestionar datos semiestructurados y potenciar un sistema de recomendaciones personalizadas. 
 
-📜 Descripción General
+# 📜 Descripción General
 La aplicación presenta un catálogo de canciones. Cuando un usuario hace clic en una canción, el sistema utiliza un algoritmo de filtrado basado en contenido para sugerir otras canciones del mismo género. Este enfoque demuestra una implementación básica pero funcional de un sistema de recomendación, cumpliendo con los requisitos del proyecto. 
 
 
 
-✨ Características
+# ✨ Características
 Catálogo de Canciones: Visualiza una lista de canciones obtenida directamente desde la base de datos NoSQL.
 
 
@@ -21,7 +21,7 @@ Arquitectura Cliente-Servidor: El frontend (cliente) se comunica con un backend 
 
 Interfaz Limpia: Una interfaz de usuario básica y fácil de usar construida con HTML, CSS y JavaScript. 
 
-🛠️ Stack Tecnológico
+# 🛠️ Stack Tecnológico
 Backend: Node.js con el framework Express.js.
 
 
@@ -32,7 +32,7 @@ Frontend: HTML5, CSS3 y JavaScript (Vanilla).
 
 Dependencias: express, mongodb, dotenv.
 
-🚀 Puesta en Marcha
+# 🚀 Puesta en Marcha
 Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
 
 1. Prerrequisitos
@@ -82,7 +82,7 @@ Bash
 node server.js
 Verás un mensaje en la consola confirmando que el servidor está escuchando en el puerto 3000 y que la conexión a la base de datos fue exitosa.
 
-💻 Uso
+# 💻 Uso
 Abre tu navegador web y ve a http://localhost:3000.
 
 Verás una lista de canciones a la izquierda.
@@ -91,7 +91,7 @@ Haz clic en cualquier canción de la lista.
 
 La sección de la derecha se actualizará para mostrarte una lista de canciones recomendadas del mismo género.
 
-📡 API Endpoints
+# 📡 API Endpoints
 La aplicación expone los siguientes endpoints para ser consumidos por el frontend:
 
 GET /api/songs
