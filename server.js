@@ -21,7 +21,7 @@ let db;
 async function connectDB() {
   try {
     await client.connect();
-    db = client.db('musicDB'); // Nombre de nuestra base de datos
+    db = client.db('sample_mflix'); // Nombre de nuestra base de datos
     console.log("Conectado exitosamente a MongoDB Atlas");
   } catch (error) {
     console.error("No se pudo conectar a la base de datos", error);
@@ -53,4 +53,5 @@ app.get('/api/recommendations/:genre', async (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
   connectDB();
+
 });
