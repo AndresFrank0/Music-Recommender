@@ -1,44 +1,902 @@
 [
-    {
-      "title": "Bohemian Rhapsody",
-      "artist": "Queen",
-      "genre": "Rock",
-      "duration_ms": 355000
-    },
-    {
-      "title": "Stairway to Heaven",
-      "artist": "Led Zeppelin",
-      "genre": "Rock",
-      "duration_ms": 482000
-    },
-    {
-      "title": "Like a Rolling Stone",
-      "artist": "Bob Dylan",
-      "genre": "Rock",
-      "duration_ms": 369000
-    },
-    {
-      "title": "Billie Jean",
-      "artist": "Michael Jackson",
-      "genre": "Pop",
-      "duration_ms": 294000
-    },
-    {
-      "title": "Uptown Funk",
-      "artist": "Mark Ronson ft. Bruno Mars",
-      "genre": "Pop",
-      "duration_ms": 270000
-    },
-    {
-      "title": "Get Lucky",
-      "artist": "Daft Punk",
-      "genre": "Funk",
-      "duration_ms": 369000
-    },
-    {
-      "title": "One More Time",
-      "artist": "Daft Punk",
-      "genre": "Funk",
-      "duration_ms": 320000
-    }
-  ]
+  {
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "album": "A Night at the Opera",
+    "genre": "Rock",
+    "year": 1975,
+    "duration_ms": 354320,
+    "bpm": 72
+  },
+  {
+    "title": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
+    "album": "Led Zeppelin IV",
+    "genre": "Rock",
+    "year": 1971,
+    "duration_ms": 482800,
+    "bpm": 84
+  },
+  {
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "album": "Nevermind",
+    "genre": "Rock",
+    "year": 1991,
+    "duration_ms": 301986,
+    "bpm": 117
+  },
+  {
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "album": "Hotel California",
+    "genre": "Rock",
+    "year": 1976,
+    "duration_ms": 390800,
+    "bpm": 75
+  },
+  {
+    "title": "Back in Black",
+    "artist": "AC/DC",
+    "album": "Back in Black",
+    "genre": "Rock",
+    "year": 1980,
+    "duration_ms": 255493,
+    "bpm": 91
+  },
+  {
+    "title": "Come As You Are",
+    "artist": "Nirvana",
+    "album": "Nevermind",
+    "genre": "Rock",
+    "year": 1991,
+    "duration_ms": 218933,
+    "bpm": 120
+  },
+  {
+    "title": "Wonderwall",
+    "artist": "Oasis",
+    "album": "(What's the Story) Morning Glory?",
+    "genre": "Rock",
+    "year": 1995,
+    "duration_ms": 258800,
+    "bpm": 87
+  },
+  {
+    "title": "Seven Nation Army",
+    "artist": "The White Stripes",
+    "album": "Elephant",
+    "genre": "Rock",
+    "year": 2003,
+    "duration_ms": 231733,
+    "bpm": 124
+  },
+  {
+    "title": "Under the Bridge",
+    "artist": "Red Hot Chili Peppers",
+    "album": "Blood Sugar Sex Magik",
+    "genre": "Rock",
+    "year": 1991,
+    "duration_ms": 264333,
+    "bpm": 85
+  },
+  {
+    "title": "Kashmir",
+    "artist": "Led Zeppelin",
+    "album": "Physical Graffiti",
+    "genre": "Rock",
+    "year": 1975,
+    "duration_ms": 508133,
+    "bpm": 80
+  },
+  {
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "album": "Thriller",
+    "genre": "Pop",
+    "year": 1982,
+    "duration_ms": 293826,
+    "bpm": 117
+  },
+  {
+    "title": "Like a Prayer",
+    "artist": "Madonna",
+    "album": "Like a Prayer",
+    "genre": "Pop",
+    "year": 1989,
+    "duration_ms": 340800,
+    "bpm": 112
+  },
+  {
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "album": "After Hours",
+    "genre": "Pop",
+    "year": 2019,
+    "duration_ms": 200040,
+    "bpm": 171
+  },
+  {
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "album": "÷ (Divide)",
+    "genre": "Pop",
+    "year": 2017,
+    "duration_ms": 233713,
+    "bpm": 96
+  },
+  {
+    "title": "Toxic",
+    "artist": "Britney Spears",
+    "album": "In the Zone",
+    "genre": "Pop",
+    "year": 2003,
+    "duration_ms": 198800,
+    "bpm": 143
+  },
+  {
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson ft. Bruno Mars",
+    "album": "Uptown Special",
+    "genre": "Pop",
+    "year": 2014,
+    "duration_ms": 269666,
+    "bpm": 115
+  },
+  {
+    "title": "Watermelon Sugar",
+    "artist": "Harry Styles",
+    "album": "Fine Line",
+    "genre": "Pop",
+    "year": 2019,
+    "duration_ms": 174000,
+    "bpm": 95
+  },
+  {
+    "title": "Dancing Queen",
+    "artist": "ABBA",
+    "album": "Arrival",
+    "genre": "Pop",
+    "year": 1976,
+    "duration_ms": 231600,
+    "bpm": 101
+  },
+  {
+    "title": "I Gotta Feeling",
+    "artist": "The Black Eyed Peas",
+    "album": "The E.N.D.",
+    "genre": "Pop",
+    "year": 2009,
+    "duration_ms": 289133,
+    "bpm": 128
+  },
+  {
+    "title": "Rolling in the Deep",
+    "artist": "Adele",
+    "album": "21",
+    "genre": "Pop",
+    "year": 2010,
+    "duration_ms": 228093,
+    "bpm": 105
+  },
+  {
+    "title": "Lose Yourself",
+    "artist": "Eminem",
+    "album": "8 Mile Soundtrack",
+    "genre": "Hip-Hop",
+    "year": 2002,
+    "duration_ms": 320666,
+    "bpm": 86
+  },
+  {
+    "title": "N.Y. State of Mind",
+    "artist": "Nas",
+    "album": "Illmatic",
+    "genre": "Hip-Hop",
+    "year": 1994,
+    "duration_ms": 293933,
+    "bpm": 84
+  },
+  {
+    "title": "Juicy",
+    "artist": "The Notorious B.I.G.",
+    "album": "Ready to Die",
+    "genre": "Hip-Hop",
+    "year": 1994,
+    "duration_ms": 302133,
+    "bpm": 96
+  },
+  {
+    "title": "Shook Ones, Pt. II",
+    "artist": "Mobb Deep",
+    "album": "The Infamous",
+    "genre": "Hip-Hop",
+    "year": 1995,
+    "duration_ms": 325600,
+    "bpm": 94
+  },
+  {
+    "title": "C.R.E.A.M.",
+    "artist": "Wu-Tang Clan",
+    "album": "Enter the Wu-Tang (36 Chambers)",
+    "genre": "Hip-Hop",
+    "year": 1993,
+    "duration_ms": 252400,
+    "bpm": 89
+  },
+  {
+    "title": "In Da Club",
+    "artist": "50 Cent",
+    "album": "Get Rich or Die Tryin'",
+    "genre": "Hip-Hop",
+    "year": 2003,
+    "duration_ms": 193400,
+    "bpm": 90
+  },
+  {
+    "title": "Stronger",
+    "artist": "Kanye West",
+    "album": "Graduation",
+    "genre": "Hip-Hop",
+    "year": 2007,
+    "duration_ms": 311866,
+    "bpm": 104
+  },
+  {
+    "title": "Still D.R.E.",
+    "artist": "Dr. Dre ft. Snoop Dogg",
+    "album": "2001",
+    "genre": "Hip-Hop",
+    "year": 1999,
+    "duration_ms": 270733,
+    "bpm": 93
+  },
+  {
+    "title": "Ms. Jackson",
+    "artist": "OutKast",
+    "album": "Stankonia",
+    "genre": "Hip-Hop",
+    "year": 2000,
+    "duration_ms": 270666,
+    "bpm": 95
+  },
+  {
+    "title": "HUMBLE.",
+    "artist": "Kendrick Lamar",
+    "album": "DAMN.",
+    "genre": "Hip-Hop",
+    "year": 2017,
+    "duration_ms": 177000,
+    "bpm": 150
+  },
+  {
+    "title": "Around the World",
+    "artist": "Daft Punk",
+    "album": "Homework",
+    "genre": "Electronic",
+    "year": 1997,
+    "duration_ms": 449693,
+    "bpm": 121
+  },
+  {
+    "title": "Strobe",
+    "artist": "deadmau5",
+    "album": "For Lack of a Better Name",
+    "genre": "Electronic",
+    "year": 2009,
+    "duration_ms": 637500,
+    "bpm": 128
+  },
+  {
+    "title": "Levels",
+    "artist": "Avicii",
+    "album": "Levels",
+    "genre": "Electronic",
+    "year": 2011,
+    "duration_ms": 201000,
+    "bpm": 126
+  },
+  {
+    "title": "Midnight City",
+    "artist": "M83",
+    "album": "Hurry Up, We're Dreaming",
+    "genre": "Electronic",
+    "year": 2011,
+    "duration_ms": 243733,
+    "bpm": 105
+  },
+  {
+    "title": "Closer",
+    "artist": "The Chainsmokers ft. Halsey",
+    "album": "Collage",
+    "genre": "Electronic",
+    "year": 2016,
+    "duration_ms": 244960,
+    "bpm": 95
+  },
+  {
+    "title": "One More Time",
+    "artist": "Daft Punk",
+    "album": "Discovery",
+    "genre": "Electronic",
+    "year": 2000,
+    "duration_ms": 320466,
+    "bpm": 123
+  },
+  {
+    "title": "Bangarang",
+    "artist": "Skrillex",
+    "album": "Bangarang",
+    "genre": "Electronic",
+    "year": 2011,
+    "duration_ms": 215466,
+    "bpm": 110
+  },
+  {
+    "title": "Blue Monday",
+    "artist": "New Order",
+    "album": "Blue Monday",
+    "genre": "Electronic",
+    "year": 1983,
+    "duration_ms": 449000,
+    "bpm": 130
+  },
+  {
+    "title": "Don't You Worry Child",
+    "artist": "Swedish House Mafia",
+    "album": "Until Now",
+    "genre": "Electronic",
+    "year": 2012,
+    "duration_ms": 212000,
+    "bpm": 129
+  },
+  {
+    "title": "Born Under a Bad Sign",
+    "artist": "Albert King",
+    "album": "Born Under a Bad Sign",
+    "genre": "Electronic",
+    "year": 1967,
+    "duration_ms": 166000,
+    "bpm": 92
+  },
+  {
+    "title": "Crazy in Love",
+    "artist": "Beyoncé ft. JAY-Z",
+    "album": "Dangerously in Love",
+    "genre": "R&B",
+    "year": 2003,
+    "duration_ms": 236133,
+    "bpm": 99
+  },
+  {
+    "title": "No Diggity",
+    "artist": "Blackstreet",
+    "album": "Another Level",
+    "genre": "R&B",
+    "year": 1996,
+    "duration_ms": 304666,
+    "bpm": 89
+  },
+  {
+    "title": "I Heard It Through the Grapevine",
+    "artist": "Marvin Gaye",
+    "album": "I Heard It Through the Grapevine",
+    "genre": "R&B",
+    "year": 1968,
+    "duration_ms": 194400,
+    "bpm": 117
+  },
+  {
+    "title": "Superstition",
+    "artist": "Stevie Wonder",
+    "album": "Talking Book",
+    "genre": "R&B",
+    "year": 1972,
+    "duration_ms": 267133,
+    "bpm": 100
+  },
+  {
+    "title": "Doo Wop (That Thing)",
+    "artist": "Lauryn Hill",
+    "album": "The Miseducation of Lauryn Hill",
+    "genre": "R&B",
+    "year": 1998,
+    "duration_ms": 320266,
+    "bpm": 100
+  },
+  {
+    "title": "Sittin' On The Dock of the Bay",
+    "artist": "Otis Redding",
+    "album": "The Dock of the Bay",
+    "genre": "R&B",
+    "year": 1968,
+    "duration_ms": 163800,
+    "bpm": 104
+  },
+  {
+    "title": "Let's Get It On",
+    "artist": "Marvin Gaye",
+    "album": "Let's Get It On",
+    "genre": "R&B",
+    "year": 1973,
+    "duration_ms": 281000,
+    "bpm": 82
+  },
+  {
+    "title": "Fallin'",
+    "artist": "Alicia Keys",
+    "album": "Songs in A Minor",
+    "genre": "R&B",
+    "year": 2001,
+    "duration_ms": 210200,
+    "bpm": 96
+  },
+  {
+    "title": "Respect",
+    "artist": "Aretha Franklin",
+    "album": "I Never Loved a Man the Way I Love You",
+    "genre": "R&B",
+    "year": 1967,
+    "duration_ms": 147600,
+    "bpm": 115
+  },
+  {
+    "title": "If I Ain't Got You",
+    "artist": "Alicia Keys",
+    "album": "The Diary of Alicia Keys",
+    "genre": "R&B",
+    "year": 2003,
+    "duration_ms": 228600,
+    "bpm": 118
+  },
+  {
+    "title": "Take Five",
+    "artist": "The Dave Brubeck Quartet",
+    "album": "Time Out",
+    "genre": "Jazz",
+    "year": 1959,
+    "duration_ms": 324000,
+    "bpm": 174
+  },
+  {
+    "title": "So What",
+    "artist": "Miles Davis",
+    "album": "Kind of Blue",
+    "genre": "Jazz",
+    "year": 1959,
+    "duration_ms": 562000,
+    "bpm": 136
+  },
+  {
+    "title": "My Favorite Things",
+    "artist": "John Coltrane",
+    "album": "My Favorite Things",
+    "genre": "Jazz",
+    "year": 1961,
+    "duration_ms": 823000,
+    "bpm": 174
+  },
+  {
+    "title": "Fly Me to the Moon",
+    "artist": "Frank Sinatra",
+    "album": "It Might as Well Be Swing",
+    "genre": "Jazz",
+    "year": 1964,
+    "duration_ms": 148000,
+    "bpm": 118
+  },
+  {
+    "title": "Round Midnight",
+    "artist": "Thelonious Monk",
+    "album": "Thelonious Himself",
+    "genre": "Jazz",
+    "year": 1957,
+    "duration_ms": 402000,
+    "bpm": 60
+  },
+  {
+    "title": "What a Wonderful World",
+    "artist": "Louis Armstrong",
+    "album": "What a Wonderful World",
+    "genre": "Jazz",
+    "year": 1967,
+    "duration_ms": 139000,
+    "bpm": 78
+  },
+  {
+    "title": "The Girl from Ipanema",
+    "artist": "Stan Getz & João Gilberto",
+    "album": "Getz/Gilberto",
+    "genre": "Jazz",
+    "year": 1964,
+    "duration_ms": 315000,
+    "bpm": 128
+  },
+  {
+    "title": "Sing, Sing, Sing",
+    "artist": "Benny Goodman",
+    "album": "The Famous 1938 Carnegie Hall Jazz Concert",
+    "genre": "Jazz",
+    "year": 1938,
+    "duration_ms": 519000,
+    "bpm": 114
+  },
+  {
+    "title": "Cantaloupe Island",
+    "artist": "Herbie Hancock",
+    "album": "Empyrean Isles",
+    "genre": "Jazz",
+    "year": 1964,
+    "duration_ms": 333000,
+    "bpm": 119
+  },
+  {
+    "title": "Feeling Good",
+    "artist": "Nina Simone",
+    "album": "I Put a Spell on You",
+    "genre": "Jazz",
+    "year": 1965,
+    "duration_ms": 177000,
+    "bpm": 116
+  },
+  {
+    "title": "Symphony No. 5",
+    "artist": "Ludwig van Beethoven",
+    "album": "Beethoven: Symphonies Nos. 5 & 7",
+    "genre": "Classical",
+    "year": 1808,
+    "duration_ms": 433000,
+    "bpm": 108
+  },
+  {
+    "title": "Eine kleine Nachtmusik",
+    "artist": "Wolfgang Amadeus Mozart",
+    "album": "Mozart: Eine kleine Nachtmusik",
+    "genre": "Classical",
+    "year": 1787,
+    "duration_ms": 344000,
+    "bpm": 130
+  },
+  {
+    "title": "Für Elise",
+    "artist": "Ludwig van Beethoven",
+    "album": "Beethoven: Für Elise",
+    "genre": "Classical",
+    "year": 1810,
+    "duration_ms": 178000,
+    "bpm": 66
+  },
+  {
+    "title": "The Four Seasons - Spring",
+    "artist": "Antonio Vivaldi",
+    "album": "Vivaldi: The Four Seasons",
+    "genre": "Classical",
+    "year": 1725,
+    "duration_ms": 199000,
+    "bpm": 120
+  },
+  {
+    "title": "Canon in D",
+    "artist": "Johann Pachelbel",
+    "album": "Pachelbel: Canon in D",
+    "genre": "Classical",
+    "year": 1680,
+    "duration_ms": 305000,
+    "bpm": 76
+  },
+  {
+    "title": "Toccata and Fugue in D minor",
+    "artist": "Johann Sebastian Bach",
+    "album": "Bach: Toccata and Fugue",
+    "genre": "Classical",
+    "year": 1704,
+    "duration_ms": 523000,
+    "bpm": 100
+  },
+  {
+    "title": "Clair de lune",
+    "artist": "Claude Debussy",
+    "album": "Debussy: Suite bergamasque",
+    "genre": "Classical",
+    "year": 1905,
+    "duration_ms": 293000,
+    "bpm": 66
+  },
+  {
+    "title": "Ride of the Valkyries",
+    "artist": "Richard Wagner",
+    "album": "Wagner: Der Ring des Nibelungen",
+    "genre": "Classical",
+    "year": 1870,
+    "duration_ms": 318000,
+    "bpm": 140
+  },
+  {
+    "title": "Ode to Joy",
+    "artist": "Ludwig van Beethoven",
+    "album": "Beethoven: Symphony No. 9",
+    "genre": "Classical",
+    "year": 1824,
+    "duration_ms": 1590000,
+    "bpm": 120
+  },
+  {
+    "title": "Also sprach Zarathustra",
+    "artist": "Richard Strauss",
+    "album": "Strauss: Also sprach Zarathustra",
+    "genre": "Classical",
+    "year": 1896,
+    "duration_ms": 110000,
+    "bpm": 60
+  },
+  {
+    "title": "Jolene",
+    "artist": "Dolly Parton",
+    "album": "Jolene",
+    "genre": "Country",
+    "year": 1974,
+    "duration_ms": 161866,
+    "bpm": 111
+  },
+  {
+    "title": "Take Me Home, Country Roads",
+    "artist": "John Denver",
+    "album": "Poems, Prayers & Promises",
+    "genre": "Country",
+    "year": 1971,
+    "duration_ms": 197466,
+    "bpm": 82
+  },
+  {
+    "title": "I Walk the Line",
+    "artist": "Johnny Cash",
+    "album": "I Walk the Line",
+    "genre": "Country",
+    "year": 1956,
+    "duration_ms": 163800,
+    "bpm": 106
+  },
+  {
+    "title": "Friends in Low Places",
+    "artist": "Garth Brooks",
+    "album": "No Fences",
+    "genre": "Country",
+    "year": 1990,
+    "duration_ms": 258666,
+    "bpm": 112
+  },
+  {
+    "title": "The Gambler",
+    "artist": "Kenny Rogers",
+    "album": "The Gambler",
+    "genre": "Country",
+    "year": 1978,
+    "duration_ms": 214400,
+    "bpm": 88
+  },
+  {
+    "title": "Stand by Your Man",
+    "artist": "Tammy Wynette",
+    "album": "Stand by Your Man",
+    "genre": "Country",
+    "year": 1968,
+    "duration_ms": 159866,
+    "bpm": 116
+  },
+  {
+    "title": "Ring of Fire",
+    "artist": "Johnny Cash",
+    "album": "Ring of Fire: The Best of Johnny Cash",
+    "genre": "Country",
+    "year": 1963,
+    "duration_ms": 158000,
+    "bpm": 105
+  },
+  {
+    "title": "Always on My Mind",
+    "artist": "Willie Nelson",
+    "album": "Always on My Mind",
+    "genre": "Country",
+    "year": 1982,
+    "duration_ms": 212000,
+    "bpm": 140
+  },
+  {
+    "title": "Before He Cheats",
+    "artist": "Carrie Underwood",
+    "album": "Some Hearts",
+    "genre": "Country",
+    "year": 2005,
+    "duration_ms": 199533,
+    "bpm": 148
+  },
+  {
+    "title": "Wagon Wheel",
+    "artist": "Darius Rucker",
+    "album": "True Believers",
+    "genre": "Country",
+    "year": 2013,
+    "duration_ms": 298000,
+    "bpm": 148
+  },
+  {
+    "title": "Three Little Birds",
+    "artist": "Bob Marley & The Wailers",
+    "album": "Exodus",
+    "genre": "Reggae",
+    "year": 1977,
+    "duration_ms": 180000,
+    "bpm": 74
+  },
+  {
+    "title": "No Woman, No Cry",
+    "artist": "Bob Marley & The Wailers",
+    "album": "Natty Dread",
+    "genre": "Reggae",
+    "year": 1974,
+    "duration_ms": 226000,
+    "bpm": 78
+  },
+  {
+    "title": "Red Red Wine",
+    "artist": "UB40",
+    "album": "Labour of Love",
+    "genre": "Reggae",
+    "year": 1983,
+    "duration_ms": 343000,
+    "bpm": 89
+  },
+  {
+    "title": "Pressure Drop",
+    "artist": "Toots & The Maytals",
+    "album": "Funky Kingston",
+    "genre": "Reggae",
+    "year": 1973,
+    "duration_ms": 226000,
+    "bpm": 142
+  },
+  {
+    "title": "Stir It Up",
+    "artist": "Bob Marley & The Wailers",
+    "album": "Catch a Fire",
+    "genre": "Reggae",
+    "year": 1973,
+    "duration_ms": 339000,
+    "bpm": 77
+  },
+  {
+    "title": "Bam Bam",
+    "artist": "Sister Nancy",
+    "album": "One, Two",
+    "genre": "Reggae",
+    "year": 1982,
+    "duration_ms": 188000,
+    "bpm": 86
+  },
+  {
+    "title": "The Harder They Come",
+    "artist": "Jimmy Cliff",
+    "album": "The Harder They Come",
+    "genre": "Reggae",
+    "year": 1972,
+    "duration_ms": 201000,
+    "bpm": 90
+  },
+  {
+    "title": "Jamming",
+    "artist": "Bob Marley & The Wailers",
+    "album": "Exodus",
+    "genre": "Reggae",
+    "year": 1977,
+    "duration_ms": 211000,
+    "bpm": 124
+  },
+  {
+    "title": "Israelites",
+    "artist": "Desmond Dekker",
+    "album": "The Israelites",
+    "genre": "Reggae",
+    "year": 1968,
+    "duration_ms": 172000,
+    "bpm": 133
+  },
+  {
+    "title": "Kingston Town",
+    "artist": "UB40",
+    "album": "Labour of Love II",
+    "genre": "Reggae",
+    "year": 1989,
+    "duration_ms": 229000,
+    "bpm": 86
+  },
+  {
+    "title": "Querida",
+    "artist": "Juan Gabriel",
+    "album": "Recuerdos II",
+    "genre": "Latin",
+    "year": 1984,
+    "duration_ms": 322000,
+    "bpm": 100
+  },
+  {
+    "title": "Despacito",
+    "artist": "Luis Fonsi ft. Daddy Yankee",
+    "album": "Vida",
+    "genre": "Latin",
+    "year": 2017,
+    "duration_ms": 229000,
+    "bpm": 89
+  },
+  {
+    "title": "La Bamba",
+    "artist": "Ritchie Valens",
+    "album": "Ritchie Valens",
+    "genre": "Latin",
+    "year": 1958,
+    "duration_ms": 126000,
+    "bpm": 154
+  },
+  {
+    "title": "Gasolina",
+    "artist": "Daddy Yankee",
+    "album": "Barrio Fino",
+    "genre": "Latin",
+    "year": 2004,
+    "duration_ms": 192000,
+    "bpm": 96
+  },
+  {
+    "title": "Bailando",
+    "artist": "Enrique Iglesias",
+    "album": "Sex and Love",
+    "genre": "Latin",
+    "year": 2014,
+    "duration_ms": 243000,
+    "bpm": 91
+  },
+  {
+    "title": "Oye Como Va",
+    "artist": "Santana",
+    "album": "Abraxas",
+    "genre": "Latin",
+    "year": 1970,
+    "duration_ms": 257000,
+    "bpm": 128
+  },
+  {
+    "title": "Vivir Mi Vida",
+    "artist": "Marc Anthony",
+    "album": "3.0",
+    "genre": "Latin",
+    "year": 2013,
+    "duration_ms": 253000,
+    "bpm": 105
+  },
+  {
+    "title": "Danza Kuduro",
+    "artist": "Don Omar ft. Lucenzo",
+    "album": "Meet the Orphans",
+    "genre": "Latin",
+    "year": 2010,
+    "duration_ms": 198000,
+    "bpm": 130
+  },
+  {
+    "title": "Suavemente",
+    "artist": "Elvis Crespo",
+    "album": "Suavemente",
+    "genre": "Latin",
+    "year": 1998,
+    "duration_ms": 267000,
+    "bpm": 124
+  },
+  {
+    "title": "El Matador",
+    "artist": "Los Fabulosos Cadillacs",
+    "album": "Vasos Vacíos",
+    "genre": "Latin",
+    "year": 1993,
+    "duration_ms": 277000,
+    "bpm": 93
+  }
+]
