@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommender - Búsqueda Avanzada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation header -->
+    <header class="header">
+        <div class="container">
+            <h1>🎵 Music Recommender</h1>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="search.html" class="nav-link active">Buscar</a>
+                <a href="favorites.html" class="nav-link">Favoritos</a>
+                <a href="genres.html" class="nav-link">Géneros</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Advanced search section -->
+        <section class="search-section">
+            <div class="container">
+                <h2>Búsqueda Avanzada</h2>
+                
+                <div class="search-form">
+                    <div class="form-group">
+                        <label for="advanced-search">Buscar canción o artista:</label>
+                        <input 
+                            type="text" 
+                            id="advanced-search" 
+                            class="search-input" 
+                            placeholder="Ingresa el nombre de la canción o artista..."
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genre-search">Filtrar por género:</label>
+                        <select id="genre-search" class="genre-select">
+                            <option value="">Todos los géneros</option>
+                            <option value="pop">Pop</option>
+                            <option value="rock">Rock</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="hip-hop">Hip-Hop</option>
+                            <option value="electronic">Electrónico</option>
+                        </select>
+                    </div>
+
+                    <button id="search-btn" class="btn btn-primary">Buscar</button>
+                </div>
+
+                <!-- Search results area -->
+                <div id="search-results" class="search-results">
+                    <p class="results-intro">Usa el formulario anterior para buscar canciones</p>
+                    <ul id="results-list" class="song-grid">
+                        <!-- Search results will be populated by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>&copy; 2025 Music Recommender App. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

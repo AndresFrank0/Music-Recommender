@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommender - Géneros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation header -->
+    <header class="header">
+        <div class="container">
+            <h1>🎵 Music Recommender</h1>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="search.html" class="nav-link">Buscar</a>
+                <a href="favorites.html" class="nav-link">Favoritos</a>
+                <a href="genres.html" class="nav-link active">Géneros</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Genre selection section -->
+        <section class="genres-section">
+            <div class="container">
+                <h2>Explora por Género</h2>
+                
+                <div class="genre-cards">
+                    <button class="genre-card" data-genre="pop">
+                        <span class="genre-emoji">🎤</span>
+                        <span class="genre-name">Pop</span>
+                    </button>
+                    <button class="genre-card" data-genre="rock">
+                        <span class="genre-emoji">🎸</span>
+                        <span class="genre-name">Rock</span>
+                    </button>
+                    <button class="genre-card" data-genre="jazz">
+                        <span class="genre-emoji">🎷</span>
+                        <span class="genre-name">Jazz</span>
+                    </button>
+                    <button class="genre-card" data-genre="hip-hop">
+                        <span class="genre-emoji">🎤</span>
+                        <span class="genre-name">Hip-Hop</span>
+                    </button>
+                    <button class="genre-card" data-genre="electronic">
+                        <span class="genre-emoji">🎛️</span>
+                        <span class="genre-name">Electrónico</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genre songs display section -->
+        <section class="genre-songs-section">
+            <div class="container">
+                <h3 id="genre-title">Selecciona un género</h3>
+                <ul id="genre-songs-list" class="song-grid">
+                    <!-- Songs for selected genre will be populated by JavaScript -->
+                </ul>
+                <div id="no-genre-selected" class="empty-state">
+                    <p>Selecciona un género para ver sus canciones</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>&copy; 2025 Music Recommender App. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

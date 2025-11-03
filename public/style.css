@@ -1,0 +1,434 @@
+:root {
+  --primary: #ff006e;
+  --secondary: #8338ec;
+  --accent: #3a86ff;
+  --dark-bg: #1a1a2e;
+  --light-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-primary: #0f3460;
+  --text-secondary: #6c757d;
+  --border-color: #e9ecef;
+  --success: #06d6a0;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, var(--light-bg) 0%, #f0f0f0 100%);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(255, 0, 110, 0.2);
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+  font-size: 0.95rem;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* MAIN LAYOUT */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =============================================
+▼▼ CÓDIGO AÑADIDO ▼▼
+ESTILOS DEL NUEVO DASHBOARD DE 2 COLUMNAS
+============================================= */
+.dashboard-container {
+/* Hacemos que este contenedor ocupe todo el ancho */
+grid-column: 1 / -1;
+
+/* Creamos las 2 columnas: 
+Columna 1 (Reco) será 1fr
+Columna 2 (Catálogo) será 1.5fr (un 50% más grande) */
+display: grid;
+grid-template-columns: 1fr 1.5fr;
+gap: 2rem; /* El mismo 'gap' que ya usabas */
+}
+/* ▲▲ CÓDIGO AÑADIDO ▲▲ */
+
+
+/* CONTROLS */
+.controls {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E") no-repeat 0.75rem center;
+  background-size: 20px;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 0, 110, 0.1);
+}
+
+#genre-filter {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius);
+  background: white;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#genre-filter:hover {
+  border-color: var(--primary);
+}
+
+#genre-filter:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 0, 110, 0.1);
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 0, 110, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* SECTIONS */
+section {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+section h2::before {
+  content: '';
+  width: 4px;
+  height: 24px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* SONG LIST */
+ul {
+  list-style: none;
+}
+
+.song-item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.song-item:last-child {
+  border-bottom: none;
+}
+
+.song-item:hover {
+  background: linear-gradient(135deg, rgba(255, 0, 110, 0.05) 0%, rgba(51, 56, 236, 0.05) 100%);
+  transform: translateX(4px);
+}
+
+.song-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.song-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-artist {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-genre {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: linear-gradient(135deg, var(--accent), var(--secondary));
+  color: white;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* BUTTONS */
+.btn-play,
+.btn-favorite,
+.btn-add-playlist {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-play {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+.btn-play:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 0, 110, 0.3);
+}
+
+.btn-favorite {
+  background: var(--light-bg);
+  color: var(--text-secondary);
+  border: 2px solid var(--border-color);
+}
+
+.btn-favorite:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-favorite.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-color: transparent;
+}
+
+.btn-add-playlist {
+  background: var(--light-bg);
+  color: var(--success);
+  border: 2px solid var(--border-color);
+}
+
+.btn-add-playlist:hover {
+  background: var(--success);
+  color: white;
+  border-color: var(--success);
+  transform: scale(1.15);
+}
+
+/* RECOMMENDATION INTRO */
+#recommendation-intro {
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(51, 56, 236, 0.1) 0%, rgba(255, 0, 110, 0.1) 100%);
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* EMPTY STATE */
+.empty-state,
+.error-message {
+  padding: 2rem !important;
+  text-align: center;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.error-message {
+  color: #dc3545;
+}
+
+/* LOADING STATE */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 1rem auto;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* RECOMMENDATION ITEM ANIMATION */
+.recommendation-item {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 0.75rem;
+  }
+
+/* ▼▼ CÓDIGO AÑADIDO ▼▼ */
+/* En pantallas pequeñas, volvemos a 1 columna */
+.dashboard-container {
+grid-template-columns: 1fr;
+}
+/* ▲▲ CÓDIGO AÑADIDO ▲▲ */
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .search-box {
+    min-width: 100%;
+  }
+
+  .song-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .song-genre {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-play,
+  .btn-favorite,
+  .btn-add-playlist {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+
+.song-item {
+padding: 0.75rem;
+    }
+}

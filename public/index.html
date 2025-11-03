@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Recommender - Inicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+      <h1>🎵 Music Recommender</h1>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="search.html" class="nav-link">Buscar</a>
+        <a href="favorites.html" class="nav-link">Favoritos</a>
+        <a href="genres.html" class="nav-link">Géneros</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+        <section class="controls-section">
+      <div class="container">
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Busca una canción o artista..."
+          >
+        </div>
+        <div class="filter-container">
+          <label for="genre-filter">Filtrar por género:</label>
+          <select id="genre-filter" class="genre-select">
+            <option value="">Todos los géneros</option>
+                      </select>
+        </div>
+      </div>
+    </section>
+
+        <div class="dashboard-container">
+
+            <section class="recommendations-section">
+        <div class="container">
+          <h2>Recomendaciones para ti</h2>
+          <p id="recommendation-intro" class="intro-text">
+            Haz clic en una canción para obtener recomendaciones personalizadas
+          </p>
+          <ul id="recommendation-list" class="recommendation-grid">
+                      </ul>
+        </div>
+      </section>
+
+            <section class="catalog-section">
+        <div class="container">
+          <h2>Catálogo de Canciones</h2>
+          <ul id="song-list" class="song-grid">
+                      </ul>
+        </div>
+      </section>
+
+    </div>   </main>
+
+    <footer class="footer">
+    <p>&copy; 2025 Music Recommender App. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

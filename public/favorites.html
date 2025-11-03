@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommender - Favoritos y Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation header -->
+    <header class="header">
+        <div class="container">
+            <h1>🎵 Music Recommender</h1>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="search.html" class="nav-link">Buscar</a>
+                <a href="favorites.html" class="nav-link active">Favoritos</a>
+                <a href="genres.html" class="nav-link">Géneros</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Favorites section -->
+        <section class="favorites-section">
+            <div class="container">
+                <h2>♥ Canciones Favoritas</h2>
+                <p class="section-intro">Tus canciones guardadas:</p>
+                <ul id="favorites-list" class="song-grid">
+                    <!-- Favorite songs will be populated by JavaScript -->
+                </ul>
+                <div id="no-favorites" class="empty-state">
+                    <p>No tienes canciones favoritas aún. ¡Haz clic en el corazón para agregar una!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Playlist section -->
+        <section class="playlist-section">
+            <div class="container">
+                <h2>📋 Mi Playlist</h2>
+                <p class="section-intro">Canciones en tu playlist actual:</p>
+                <div class="playlist-controls">
+                    <button id="clear-playlist" class="btn btn-danger">Limpiar Playlist</button>
+                </div>
+                <ul id="playlist-list" class="song-grid">
+                    <!-- Playlist songs will be populated by JavaScript -->
+                </ul>
+                <div id="no-playlist" class="empty-state">
+                    <p>Tu playlist está vacía. ¡Agrega canciones para comenzar!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>&copy; 2025 Music Recommender App. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
